@@ -22,8 +22,9 @@ function SignupPage() {
             setError(false);
             setSubmit(true);
             setUsers([...users, data])
-            console.log(users);
-
+            users.map((user) =>{
+                console.log(user.name + " " + user.email + " " + user.password);
+            })
         }
     }
     function handleName(e) {
